@@ -1,0 +1,71 @@
+<div class="grid-wrapper">
+    <div class="search-row">
+        <div class="search">
+            <div class="search-input">
+                <input type="text" placeholder="artikal" class="input">
+            </div>
+            <div class="search-buttons">
+                <button class="search-btn">Pretrazi</button>
+                <button class="reset">Resetuj</button>
+            </div>
+        </div>
+        <div class="results">
+            Showing results
+        </div>
+    </div>
+    <div class="categories-column">
+            <div class="cat-title">
+                <h3>Categories</h3>
+            </div>
+            <div class="categories-table">
+                <ul>ListOne
+
+                </ul>
+                <ul>ListOne</ul>
+                <ul>ListOne</ul>
+                <ul>ListOne</ul>
+                <ul>ListOne</ul>
+            </div>
+          
+            <div class="sort-dropdown">
+                <div class="size-dropdown" *ngIf="sortOptions!=null">
+                    <div class="select-box">
+                        <div class="options-container" >
+                          <div class="option" *ngFor='let item of sortOptions'>
+                            <input
+                              type="radio"
+                              class="radio"
+                              id="automobiles"
+                              name="category"
+                            />
+                            <label for="automobiles"  (click)='toggle($event)'>{{item.name}}</label>
+                          </div>
+                        </div>
+                
+                        <div class="selected" (click)="select()">
+                          Sort
+                        </div>
+                      </div> 
+                </div>
+            </div>
+        
+    </div>
+    <div class="shop-column">
+        <div class="item-card"*ngFor="let product of products" routerLink="/shop/{{product.id}}">
+            <app-product-item [product]="product"></app-product-item>
+        </div>
+    
+
+       
+       
+    </div>
+
+    <div class="social-column">
+        <div class="social">
+            <app-social-media></app-social-media>
+        </div>
+    </div>
+    <div class="pagination">
+        Pagination
+    </div>
+</div>

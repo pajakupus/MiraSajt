@@ -1,0 +1,17 @@
+.image-wrap {
+    background-color: rgb(212, 208, 197);
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+.image-wrap img {
+    width: 100%;
+    height: auto;
+}
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px 0 20px;
+}
+.item-title {
+}

@@ -1,0 +1,130 @@
+.nav-bar {
+    padding: 40px 120px 40px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    cursor: pointer;
+    margin-right: 6vw;
+    
+    
+}
+.logo-text {
+    font-family: 'Futura bt';
+    font-weight: 500;
+    font-size: 55px;
+}
+
+.nav-menu {
+    position: relative;
+    font-family: 'Futura book font';
+	font-weight: 400;
+    font-size: 17px;
+    padding-top: 10px 0 0 0;
+    // margin-right: 100px;
+    margin: 0 0 0 0;
+    flex:1;
+    
+}
+.underline {
+    position: absolute;
+    background-color: orange;
+    height: 1px;
+    //width: 125px;
+    bottom: 0;
+    //left:0;
+    transition: 0.3s;
+    
+}
+.nav-menu-item {
+    display: inline-block;
+    margin: auto 3vw auto 0px;
+    transition: 0.2s;
+    color: #2A2A2A;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-menu-item:hover {
+    color:orange;
+    
+}
+.active {
+    color:orange;
+}
+
+.nav-right {
+    display: flex;
+    padding-top: 10px;
+    min-width: 180px;
+    
+    
+}
+.basket-wrapper {
+    margin-right: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.basket-wrapper:focus {
+    outline: none;
+}
+    
+.basket-icon {
+    height: 36px;
+    width: 36px;
+    position: relative;
+    
+}
+.basket-icon img {
+    width: 100%;
+    height: auto;
+    border: none;
+
+}
+.circle {
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: -15%;
+    right: -10%;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-family: 'Futura bt';
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 1.5px;
+}
+.nav-buttons {
+    display: flex;
+}
+.login {
+    height: 36px;
+    width: 108px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    margin-right: 15px;
+}
+.signup {
+    height: 36px;
+    width: 108px;
+    border: none;
+    background-color: orange;
+    color: white;
+}
+.login:focus {
+    outline: none;
+}
+.signup:focus {
+    outline: none;
+}
+
+@media (max-width: 1100px) {
+    .logo {
+        margin-right: 4vw;
+    }
+  }
+

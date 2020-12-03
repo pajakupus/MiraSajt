@@ -1,0 +1,22 @@
+[
+    {
+        "Id": 1,
+        "ProductId": 1,
+        "SizeId": 1
+    },
+    {
+        "Id": 2,
+        "ProductId": 1,
+        "SizeId": 2
+    },
+    {
+        "Id": 3,
+        "ProductId": 2,
+        "SizeId": 2
+    },
+    {
+        "Id": 4,
+        "ProductId": 2,
+        "SizeId": 3
+    }
+]

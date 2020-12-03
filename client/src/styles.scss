@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+    font-family: 'Futura bt';
+    src: url('../../external/futura medium bt.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Futura book font';
+	src: url('../../external/Futura Book font.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Didot';
+	src: url('../../external/Didot LT Std Bold.otf') format('otf');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	color: #2A2A2A;
+}
+
+

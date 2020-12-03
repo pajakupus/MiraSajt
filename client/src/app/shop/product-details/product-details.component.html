@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="image">
+        <div class="img">
+            <img src="{{this.product.pictureUrl}}" alt="{{product.name}}">
+        </div>
+        <div class="scroll-images">
+            <div class="button-left">
+                <img src="../../../assets/icons8-less-than-50.png" alt="">
+            </div>
+            <div class="button-right">
+                <img src="../../../assets/icons8-greather-than-50.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="details">
+            <h1 class="product-name">{{product.name}}</h1>
+            <h3 class="product-price">{{product.price}}</h3>
+            <h4 class="product-price-invalid">{{product.price + 999}}</h4>
+            <div class="description">
+                <p>{{product.description}}</p>
+            </div>
+            <div class="flex-container">
+                <p class="size-text">Size:</p>
+                <div class="sort-dropdown">
+                    <div class="size-dropdown" *ngIf="product.productSize!=null">
+                        <div class="select-box">
+                            <div class="options-container" >
+                              <div class="option" *ngFor='let item of product.productSize'>
+                                <input
+                                  type="radio"
+                                  class="size-option"
+                                  id="size"
+                                  name="category"
+                                />
+                                <label for="size"  (click)='toggle($event)'>{{item.name}}</label>
+                              </div>
+                            </div>
+                    
+                            <div class="selected" (click)="select()">
+                              <p>Size</p>
+                            </div>
+                          </div> 
+                    </div>
+                </div>    
+                <div class="quantity-text">Quantity:</div>
+                <div class="quantity">{{quantity}}</div>
+                <div class="sliders">
+                    <div class="increment" (click)="incrementQuantity()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 24"><path d="M16.59,16,12,11.42,7.41,16,6,14.59l6-6,6,6Z" transform="translate(0 0)" style="fill:#231f20"/><path d="M0,0H24V24H0Z" transform="translate(0 0)" style="fill:none"/></svg>
+                    </div>
+                    <div class="decrement" (click)="decrementQuantity()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 24"><path d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" transform="translate(0 0)" style="fill:#231f20"/><path d="M0,0H24V24H0Z" transform="translate(0 0)" style="fill:none"/></svg>
+                    </div>
+                </div>
+            </div>
+            <button class="buy-btn" (click)="addItemToCart()">
+                KUPI
+            </button>
+            
+    </div>
+    
+    <div class="back">
+        <div class="back-wrapper">
+            <p>Nazad</p>
+        <div class="back-btn" routerLink="/shop">
+            <img src="../../../assets/icons8-less-than-50.png" alt="">
+        </div>
+        </div>
+        
+    </div>
+    <div class="social">
+        <div class="icons">
+            <app-social-media></app-social-media>
+        </div>
+        
+    </div>
+</div>
