@@ -16,6 +16,7 @@ import { SignupComponent } from './signup/signup.component';
 import { FooterComponent } from './footer/footer.component';
 import { ShopModule } from './shop/shop.module';
 import { OrdersComponent } from './orders/orders.component';
+import { OrdersModule } from './orders/orders.module';
 
 
 @NgModule({
@@ -28,15 +29,15 @@ import { OrdersComponent } from './orders/orders.component';
     LoginComponent,
     SignupComponent,
     HomeComponent,
-    FooterComponent,
-    OrdersComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     SharedModule,
-    ShopModule
+    ShopModule,
+    OrdersModule
 
   ],
   providers: [],
